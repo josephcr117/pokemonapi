@@ -36,15 +36,10 @@ namespace PokemonAPI.Controller
 
                         pokemonList.Add(new PokemonData { Name = pokemonName, ImageUrl = imageUrl });
                     }
-                    else
-                    {
-                        // Handle unsuccessful response if needed
-                    }
                 }
             }
             catch (Exception ex)
             {
-                // Handle exception appropriately, maybe log it
                 Console.WriteLine("Error fetching Pokémon data: " + ex.Message);
             }
             finally
